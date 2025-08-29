@@ -1,0 +1,106 @@
+# ===================================================================
+# FORTIGATE BACKUP SYSTEM - GITIGNORE
+# ===================================================================
+# Este arquivo protege credenciais e dados sensíveis de serem
+# commitados acidentalmente no repositório Git.
+# ===================================================================
+
+# === ARQUIVOS DE CONFIGURAÇÃO SENSÍVEIS ===
+# Arquivo principal de configuração (contém credenciais)
+.env
+
+# Configuração real dos dispositivos (contém senhas)
+config/devices.json
+
+# === DADOS DE BACKUP E LOGS ===
+# Arquivos de backup dos FortiGates
+backups/
+backups/*
+*.conf
+
+# Logs da aplicação
+logs/
+logs/*
+*.log
+
+# === ARQUIVOS TEMPORÁRIOS ===
+# Arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === ARQUIVOS DO SISTEMA ===
+# Arquivos do sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === ARQUIVOS DE IDE ===
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# === ARQUIVOS DOCKER ===
+# Não ignorar docker-compose.yml e Dockerfile (são necessários)
+# Mas ignorar possíveis overrides locais
+docker-compose.override.yml
+
+# === ARQUIVOS DE TESTE ===
+# Arquivos de teste temporários
+test_*.py
+*_test.py
+tests/
+
+# === CERTIFICADOS E CHAVES ===
+# Certificados SSL/TLS
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# === ARQUIVOS DE BACKUP LOCAIS ===
+# Backups locais do desenvolvedor
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===================================================================
+# ARQUIVOS PERMITIDOS (EXEMPLOS E TEMPLATES):
+# - .env.example
+# - config/devices.json.example
+# - README.md
+# - docker-compose.yml
+# - Dockerfile
+# - requirements.txt
+# - scripts/*
+# - src/*
+# ===================================================================
